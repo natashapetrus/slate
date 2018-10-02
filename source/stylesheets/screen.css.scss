@@ -60,7 +60,7 @@ html, body {
   width: $nav-width;
   background-color: $nav-bg;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: lighter;
 
   // language selector for mobile devices
   .lang-selector {
@@ -83,7 +83,7 @@ html, body {
 
     input {
       background: $nav-bg;
-      border-width: 0 0 1px 0;
+      border-width: 0 0 0 0;
       border-color: $search-box-border-color;
       padding: 6px 0 6px 20px;
       box-sizing: border-box;
@@ -166,7 +166,6 @@ html, body {
   .toc-list-h2 {
     display: none;
     background-color: $nav-subitem-bg;
-    font-weight: 500;
   }
 
   .toc-h2 {
@@ -177,7 +176,7 @@ html, body {
   .toc-footer {
     padding: 1em 0;
     margin-top: 1em;
-    border-top: 1px dashed $nav-footer-border-color;
+    text-align: center;
 
     li,a {
       color: $nav-text;
@@ -273,7 +272,6 @@ html, body {
   .lang-selector {
     position: fixed;
     z-index: 50;
-    border-bottom: 5px solid $lang-select-active-bg;
   }
 }
 
@@ -286,9 +284,11 @@ html, body {
     float:left;
     color: $lang-select-text;
     text-decoration: none;
+    margin: 5px;
     padding: 0 10px;
     line-height: 30px;
     outline: 0;
+    border-radius: 5px;
 
     &:active, &:focus {
       background-color: $lang-select-pressed-bg;
@@ -344,6 +344,12 @@ html, body {
     clear:both;
   }
 
+  a {
+    color: $main-link;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
   h1 {
     @extend %header-font;
     font-size: 25px;
@@ -351,8 +357,6 @@ html, body {
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
     background-color: #fdfdfd;
   }
 
@@ -508,7 +512,6 @@ html, body {
 ////////////////////////////////////////////////////////////////////////////////
 // CODE SAMPLE STYLES
 ////////////////////////////////////////////////////////////////////////////////
-// This is all the stuff that appears in the right half of the page
 
 .content {
   pre, blockquote {
@@ -612,4 +615,51 @@ html, body {
 
 .highlight, .highlight .w {
   background-color: $code-bg;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// SOCIAL ICONS
+////////////////////////////////////////////////////////////////////////////////
+@import url('https://use.fontawesome.com/releases/v5.1.1/css/all.css');
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.header-soc-icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: x-large;
+    text-decoration: none;
+}
+.soc-icon {
+    color: #fff;
+}
+ul.soc-icons {
+    margin-top: 10px;
+}
+.soc-icons li {
+    vertical-align: top;
+    display: inline;
+}
+.soc-icons a {
+    color: #c0c0c0;
+    text-decoration: none;
+}
+.fab, .fa, .fas {
+    -o-transition: .1s;
+    -ms-transition: .1s;
+    -moz-transition: .1s;
+    -webkit-transition: .1s;
+    transition: .1s;
+    border-radius: 7px;
+}
+.fab:hover, .fa:hover, .fas:hover {
+    color: #3b3b3b;    
+    text-decoration: none;
 }

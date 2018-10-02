@@ -23,33 +23,34 @@ under the License.
 
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #2E3336 !default;
-$examples-bg: #2E3336 !default;
-$code-bg: #1E2224 !default;
-$code-annotation-bg: #191D1F !default;
-$nav-subitem-bg: #1E2224 !default;
-$nav-active-bg: #0F75D4 !default;
-$nav-active-parent-bg: #1E2224 !default; // parent links of the current section
+$nav-bg: #fff !default;
+$examples-bg: #242329 !default;
+$code-bg: #0d0d0d !default;
+$code-annotation-bg: $examples-bg !default;
+$nav-subitem-bg: #f2f2f2 !default;
+$nav-active-bg: #00B9EE !default;
+$nav-active-parent-bg: #fff !default; // parent links of the current section
 $lang-select-border: #000 !default;
-$lang-select-bg: #1E2224 !default;
-$lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
-$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
-$main-bg: #F3F7F9 !default;
-$aside-notice-bg: #8fbcd4 !default;
-$aside-warning-bg: #c97a7e !default;
-$aside-success-bg: #6ac174 !default;
-$search-notice-bg: #c97a7e !default;
+$lang-select-bg: $examples-bg !default;
+$lang-select-active-bg: $nav-active-bg !default;
+$lang-select-pressed-bg: $lang-select-bg !default; // color of language tab bg when mouse is pressed
+$main-bg: #fff !default;
+$aside-notice-bg: #f4f4fb !default;
+$aside-warning-bg: #f4f4fb !default;
+$aside-success-bg: #f4f4fb !default;
+$search-notice-bg: #f4f4fb !default;
 
 
 // TEXT COLORS
 ////////////////////
 $main-text: #333 !default; // main content text color
-$nav-text: #fff !default;
+$nav-text: #000 !default;
 $nav-active-text: #fff !default;
-$nav-active-parent-text: #fff !default; // parent links of the current section
+$nav-active-parent-text: #000 !default; // parent links of the current section
 $lang-select-text: #fff !default; // color of unselected language tab text
 $lang-select-active-text: #fff !default; // color of selected language tab text
 $lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
+$main-link: #007bff !default;
 
 
 // SIZES
@@ -69,14 +70,26 @@ $phone-width: $tablet-width - $nav-width !default; // min width before reverting
 
 // FONTS
 ////////////////////
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+       url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 %default-font {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'open_sansregular', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
 }
 
 %header-font {
   @extend %default-font;
-  font-weight: bold;
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
 
 %code-font {

@@ -8,8 +8,9 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+  - <div class="header-soc-icons"><ul class="soc-icons"><li><a href="https://www.facebook.com/geniuslink" class="soc-icon"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.instagram.com/geniuslink/" class="soc-icon"><i class="fab fa-instagram"></i></a></li><li><a href="https://twitter.com/geniuslink" class="soc-icon"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.geni.us/" class="soc-icon"><i class="fas fa-globe-americas"></i></a></li></ul></div> 
+  - <a href='mailto:help@geni.us'>Questions? Contact us</a>
+  - <a href='https://kb.geni.us/geniusapi'>Visit our Knowledge Base</a>
 
 includes:
   - errors
