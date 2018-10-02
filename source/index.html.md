@@ -11,9 +11,9 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - go: Go
 
 toc_footers:
-  - <div class="header-soc-icons"><ul class="soc-icons"><li><a href="https://www.facebook.com/geniuslink" class="soc-icon"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.instagram.com/geniuslink/" class="soc-icon"><i class="fab fa-instagram"></i></a></li><li><a href="https://twitter.com/geniuslink" class="soc-icon"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.geni.us/" class="soc-icon"><i class="fas fa-globe-americas"></i></a></li></ul></div> 
-  - <a href='mailto:help@geni.us'>Questions? Contact us</a>
+  - <div class="header-soc-icons"><ul class="soc-icons"><li><a href="https://www.facebook.com/geniuslink" class="soc-icon"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.instagram.com/geniuslink/" class="soc-icon"><i class="fab fa-instagram"></i></a></li><li><a href="https://twitter.com/geniuslink" class="soc-icon"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.geni.us/" class="soc-icon"><i class="fas fa-globe-americas"></i></a></li></ul></div>
   - <a href='https://kb.geni.us/geniusapi'>Visit our Knowledge Base</a>
+  - <a href='mailto:help@geni.us'>Questions? Contact us</a>
 
 includes:
   - errors
