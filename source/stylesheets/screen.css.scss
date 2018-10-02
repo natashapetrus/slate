@@ -278,10 +278,11 @@ html, body {
 .lang-selector {
   background-color: $lang-select-bg;
   width: 100%;
-  font-weight: bold;
+  font-weight: lighter;
   a {
     display: block;
     float:left;
+    font-size: smaller;
     color: $lang-select-text;
     text-decoration: none;
     margin: 5px;

@@ -3,8 +3,8 @@ title: API Reference
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell: curl
   - http: HTTP
-  - javascript: JavaScript
-  - javascript--nodejs: Node.JS
+  - javascript: JS
+  - javascript--nodejs: Node
   - ruby: Ruby
   - python: Python
   - java: Java
